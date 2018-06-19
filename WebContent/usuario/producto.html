@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <title>
+     tuAGRO
+    </title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" rel="stylesheet" href="http://192.168.1.14:8080/Actualizacion/css/estilo.css">   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+        
+        
+</head>  
+     
+<body class="font-cover" id="main" style="">
+ 
+ <!-- MENU DE NAVEGACION--> 
+<nav class="teal">
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s12">
+            <a href="../index.html" class="brand-logo"><h1>tuAGRO</h1></a> 
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>     
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li  class="active"><a href="inicio.html">Inicio</a></li>
+               <li><a href="cultivo.html">Mis Cultivos</a></li>
+                <li>
+                 <a class="dropdown-button usuario" href="#!" data-activates="dropdown2"></a>
+                </li>
+                <i class="material-icons left">account_circle</i>
+            </ul>  
+            <!--menu desplegable-->
+              <ul class="dropdown-content" id="dropdown2">
+                <li><a href="../servidor/logout.php">Cerrar Sesion</a></li>
+              </ul> 
+        <!--Menu movile-->      
+                <ul class="side-nav" id="mobile-demo">
+                  <li>
+                    <div class="user-view">
+                      <div class="background">
+                        <img src="../../imagenes/banner1.jpg">
+                      </div>
+                      <a href="#"><img class="circle" src="../../imagenes/banner1.jpg"></a>
+                      <a href="#"><span class="usuario"  style="font-size: 20px;"></span></a>
+                      <a href="#"><span class="email"></span></a>
+                    </div>
+                  </li>
+                  <li class="active"><a href="inicio.html">Inicio</a></li>
+                  <li><div class="divider"></div></li>
+                  <li class="no-padding">
+                  <li><a href="cultivo.html">Mis Cultivos</a></li>
+                  <li><div class="divider"></div></li>
+                  <li><a href="../servidor/logout.php">Cerrar Sesion</a></li>
+                </ul>                      
+        </div>
+      </div>
+    </div>    
+  </div>  
+</nav> 
+    
+  <!--</div>-->
+
+<div id="contenedor-principal" class="">
+      <div class="banner" style="visibility: visible; width: 100%; height: 200px; position: relative; overflow: hidden;">
+
+          <img class="z-depth-3 responsive-img img-banner" src="../../imagenes/banner1.jpg">
+          <div class="box">
+              <h1>
+                <b class="nombre_producto">
+                     
+                </b>
+              </h1>
+          </div>
+    </div>   
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col s10 l5 m5 offset-s1 img-producto">
+          <div class="row center">
+            <img class="responsive-img materialboxed circle" width="650" src="../../imagenes/papa.jpg"  style="width: 650px; height: 400px">
+            <div class="input-field col s12">
+
+                <input type="button" id="crear" value="Agregar" class="btn crear">
+
+            </div>  
+          </div>
+        </div>                
+        <div class="col s10 l7 m7 offset-s1"> 
+          <div class="row">
+            <div class="descripcion descripcion_producto" style="padding-left: 20px;">
+            
+            </div>    
+          </div>                  
+        </div>
+        <div class="col s10 l12 m12 offset-s1">
+          <div class="row">
+            <div class="descripcion">
+              <h2>Tratamiento o Pasos para su Cultivo</h2>
+            </div>
+            <div>
+              <ul class="descripcion pasos">
+                
+              </ul>
+            </div>
+          </div>
+        </div> 
+        <div class="col s10 l12 m12 offset-s1">
+          <div class="row">
+            <div >
+              <h2>Posibles Plagas</h2>
+              <br>
+        <div class="row plagas">
+
+        </div>              
+            </div>
+          </div>
+        </div>              
+      </div>      
+    </div>
+</div>
+  
+        <footer class="page-footer teal">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">SOCEA</h5>
+                <p class="grey-text text-lighten-4">Proyecto de Actualizacion tecnologica 10mo Semestre, Ingenieria de Sistemas, Corporacion Universitaria de Caribe CECAR</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Desarrolladores</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jose Alberto Martinez Villegas</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Luis Fernando Navaz Sierra</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jahir Jose Estrada</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+
+
+
+  <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script type="text/javascript" src="http://192.168.1.14:8080/Actualizacion/javaScript/datosUrl.js"></script>
+  <script type="text/javascript">
+       $(document).ready(function() {
+ 
+      $('select').material_select();
+      $('.dropdown-button').dropdown({
+        contrainWidth: true,
+        gutter: 20,
+        belowOrigin: true,
+        alignment: 'left',
+        stopPropagation: false
+      }); 
+      $('.button-collapse').sideNav();
+
+
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
+    });
+  </script>
+
+<script type="text/javascript">  
+  
+  $(document).ready(function(){
+    $('.tooltipped').tooltip({delay:10});
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerSesion"
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/usuario.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   var id = obj.id_usuario;
+                   var usuario = obj.usuario;
+                   var nombre = obj.nombre;
+                   var apellido = obj.apellido;
+                   var email = obj.email;
+                   $(".usuario").append(nombre+" "+apellido);
+                   $(".email").append(email);
+              });  
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerProductoSeleccionado",
+                    'idProducto': $.get('id_producto')
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/producto_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   
+                   
+                   for(var i = 0; i < obj.length; i++){
+                     
+                     var id_producto = obj[i]['id_producto'];
+                     var nombre = obj[i]['nombre'];
+                     var descripcion = obj[i]['descripcion'];
+
+                     $(".nombre_producto").append(nombre);
+                     $(".descripcion_producto").append(
+                      '<p ALIGN="justify">'+descripcion+'</p>'
+                      );
+                   
+                   }
+                   
+              });     
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerPasos",
+                    'idProducto': $.get('id_producto')
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/producto_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   
+                   
+                   for(var i = 0; i < obj.length; i++){
+                     
+                     var id_paso = obj[i]['id_paso'];
+                     var descripcion = obj[i]['descripcion'];
+
+                     $(".pasos").append(
+                      '<li>'+(i+1)+'. '+descripcion+'</li>'
+                     );
+                   
+                   }
+                   
+              });                             
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerPlagasPorProducto",
+                    'idProducto': $.get('id_producto')
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/plaga_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   
+                   
+                   for(var i = 0; i < obj.length; i++){
+                     
+                     var id_plaga = obj[i]['id_plaga'];
+                     var nombre = obj[i]['nombre'];
+                     var descripcion = obj[i]['descripcion'];
+                     var prevencion = obj[i]['prevencion'];
+
+                     $(".plagas").append(
+                      '<div class="col s10 l4 m4 offset-s1">'+
+                        '<div class="card sticky-action">'+ 
+                          '<div class="card-image waves-effect waves-block waves-light">'+
+                            '<div class="row">'+
+                              '<img class="activator responsive-img" src="../../imagenes/plaga.jpg" style="width: 265px; height: 230px">'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="card-content">'+
+                            '<span class="card-title activator grey-text text-darken-4">'+nombre+'<i class="material-icons right">more_vert</i></span>'+
+                          '</div>'+                                          
+                          '<div class="card-reveal" style="word-wrap: break-word;">'+
+                            '<b><span class="card-title grey-text text-darken-4">'+nombre+'<i class="material-icons right">close</i></span></b>'+
+                            '<br>'+
+                            '<hr>'+
+                            '<br>'+
+                            '<p ALIGN="justify">'+descripcion+'<a class="waves-effect waves-light modal-trigger" href="#modal'+id_plaga+'">ver mas...</a></p>'+
+                            '<br>'+
+                            '<br>'+
+                            '<br>'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>'+
+                      '<!-- Modal Structure -->'+
+                      '<div id="modal'+id_plaga+'" class="modal">'+
+                        '<div class="modal-content">'+
+                          '<h2>Prevencion</h2>'+
+                            '<p ALIGN="justify">'+prevencion+'</p>'+
+                        '</div>'+
+                        '<div class="modal-footer">'+
+                          '<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>'+
+                        '</div>'+
+                      '</div>'
+                     );
+                   
+                   }
+                              $('.modal').modal();
+                   
+              });   
+
+      $(".crear").click(function(e){ 
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerSesion"
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/usuario.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   var id = obj.id_usuario;
+
+                  var datos=[];
+                    datos.push({
+                      "operacion": "crearCultivo",
+                      "id_usuario": id, 
+                      "id_producto": $.get('id_producto')
+
+                    }); 
+                  var ha = {"datos": datos};    
+                  var json = JSON.stringify(ha);
+                  console.log(json);
+                  ajax("../servidor/cultivo_gestion.php", {"json": json}).done(function(info) {
+           
+                    if (info) {
+                      
+                      Materialize.toast('Error al Registrar Cultivo', 500,'',function(){
+                        location.reload(true);              
+                      });
+                    }else{
+                      Materialize.toast('Cultivo Agregado Correctamente', 500,'',function(){
+                        location.reload(true);              
+                      });
+                    }
+                  });
+
+
+              });  
+           
+            return false;           
+                        
+
+ 
+      });
+
+
+
+  
+
+            
+
+  });
+
+       function ajax(url, data){
+
+            var ajax = $.ajax({
+                "url": url,
+                "data": data,
+                "type": "POST",
+
+              
+              });
+               return ajax;
+
+          }
+
+  </script> 
+</body>
+</html> 

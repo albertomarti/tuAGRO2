@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <title>
+     tuAGRO - administrador
+    </title>
+    <!--Import Google Icon Font-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" rel="stylesheet" href="http://192.168.1.14:8080/Actualizacion/css/estilo.css">  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+        
+        
+</head>  
+     
+<body class="font-cover" id="main" style="">
+ 
+ <!-- MENU DE NAVEGACION--> 
+   <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="../index.html" class="brand-logo"><h1>tuAGRO</h1></a> 
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>     
+                
+          <!--Menu escritorio-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li> <a href="inicio.html">Inicio</a></li>
+              <!--boton del menu desplegable-->
+              <li class="active">
+                <a href="productos.html" >Productos</a>
+              </li>
+              <li><a href="plagas.html">Plagas</a></li>
+              <li>
+                <a class="dropdown-button usuario" href="#!" data-activates="dropdown2"></a>
+              </li>
+              <i class="material-icons left">account_circle</i>
+          </ul>  
+          <!--menu desplegable-->
+          <ul class="dropdown-content" id="dropdown2">
+            <li><a href="../servidor/logout.php">Cerrar Sesion</a></li>
+          </ul>                
+          <!--Menu movile-->      
+          <ul class="side-nav" id="mobile-demo">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="../../imagenes/banner1.jpg">
+                </div>
+                <a href="#"><img class="circle" src="../../imagenes/banner1.jpg"></a>
+                <a href="#"><span class="usuario"  style="font-size: 20px;"></span></a>
+                <a href="#"><span class="email"></span></a>
+              </div>
+            </li>
+            <li class="active"><a href="inicio.html">Inicio</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><div class="divider"></div></li>  
+            <li><a href="plagas.html">Plagas</a></li>
+                              <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li class="active">
+                        <a href="#" class="collapsible-header"><i class="material-icons 
+      right">arrow_drop_down</i>Cultivo</a>
+                          <div class="collapsible-body">
+                            <ul class="collection2">
+
+                            </ul>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>                     
+            <li><div class="divider"></div></li>
+            <li><a href="../servidor/logout.php">Cerrar Sesion</a></li>
+          </ul>
+        </div>
+      </div>  
+    </nav>  
+    
+  <!--</div>-->
+
+<div id="contenedor-principal" class="">
+      <div class="banner" style="visibility: visible; width: 100%; height: 200px; position: relative; overflow: hidden;">
+
+          <img class="z-depth-3 responsive-img img-banner" src="../../imagenes/banner1.jpg">
+          <div class="box">
+              <h1><b>Productos</b></h1>
+          </div><!-- /.box -->
+    </div>   
+  <div class="row">
+    <!-- Categorias -->
+    <div class="col s4  hide-on-small-only">
+      <div class="card">
+        <div class="card-content center">
+          <h2>Menú Producto</h2>
+        </div>
+        <div class="collection">
+
+        </div>
+      </div>
+    </div>                 
+    <div class="col s12 m8"> 
+      <div class="row">
+        <div class="descripcion">
+     
+        </div>    
+      </div>                  
+      <br>
+      <hr>
+      <br>
+      <div class="row">
+        <h2><p>Seleccionar Plaga para el Producto</p></h2>
+        <div class="nuevoItem">
+          <div class="container">
+            <div class="row">          
+              <div class="col s12 m6 l6">
+                <div class="input-field">
+                  <select id="plagas">
+   
+                  </select>
+                </div>                       
+              </div>
+              <div class="col s12 m6 l6">
+              	<div class="nuevoTest">
+                	<div class="input-field col s12">
+                  		<input type="button" id="asignar" value="Agregar" class="btn">
+                	</div>                      
+              	</div> 
+              </div>                         
+            </div>
+            <div class="row">
+              <div class="col s12 l8 m8 plagasAsignadas">
+
+              </div>
+            </div>        
+          </div> 
+        </div>
+      </div>  
+    </div>      
+  </div>
+
+
+
+              
+          
+            
+        <footer class="page-footer teal">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">SOCEA</h5>
+                <p class="grey-text text-lighten-4">Proyecto de Actualizacion tecnologica 10mo Semestre, Ingenieria de Sistemas, Corporacion Universitaria de Caribe CECAR</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Desarrolladores</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jose Alberto Martinez Villegas</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Luis Fernando Navaz Sierra</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jahir Jose Estrada</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+
+
+
+  <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript" src="http://192.168.1.14:8080/Actualizacion/javaScript/datosUrl.js"></script>  
+  <script type="text/javascript">
+
+       $(document).ready(function() {
+      $('select').material_select();
+      $('.dropdown-button').dropdown({
+        contrainWidth: true,
+        gutter: 20,
+        belowOrigin: true,
+        alignment: 'left',
+        stopPropagation: false
+      }); 
+      $('.button-collapse').sideNav();
+    });
+  </script>
+
+<script type="text/javascript">  
+  
+  $(document).ready(function(){
+    $('.tooltipped').tooltip({delay:10});
+
+              $(".collection").append(
+                '<a href="verProducto.html?id_producto='+$.get("id_producto")+'" class="collection-item"><i class="material-icons left">assignment</i>Instrucciones de Cultivo</a>'+ 
+                '<a href="asignarPlaga.html?id_producto='+$.get("id_producto")+'" class="collection-item active"><i class="material-icons left">assignment</i>Asignar Plagas</a>'
+              );
+
+              $(".collection2").append(
+                '<li><a href="verProducto.html?id_producto='+$.get("id_producto")+'" class="collection-item"><i class="material-icons left">assignment</i>Instrucciones de Cultivo</a></li>'+ 
+                '<li><a href="asignarPlaga.html?id_producto='+$.get("id_producto")+'" class="collection-item active"><i class="material-icons left">assignment</i>Asignar Plagas</a></li>'
+              );                      
+
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerSesion"
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/usuario.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   var id = obj.id_usuario;
+                   var usuario = obj.usuario;
+                   var nombre = obj.nombre;
+                   var apellido = obj.apellido;
+                   var email = obj.email;
+                   $(".usuario").append(nombre+" "+apellido);
+                   $(".email").append(email);
+              });    
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerProductoSeleccionado",
+                    "idProducto": $.get('id_producto')
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/producto_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   
+                   for(var i = 0; i < obj.length; i++){
+                     
+                     var id_producto = obj[i]['id_producto'];
+                     var nombre = obj[i]['nombre'];
+                     var descripcion = obj[i]['descripcion'];
+
+
+                     $(".descripcion").append(
+                      '<h2><p>'+nombre+'</p></h2>'+
+                      '<h3><center>'+descripcion+'</center> </h3>'+
+                      '<input type="hidden" id="idProducto" value="'+id_producto+'">'+
+                      '<input type="hidden" id="idPaso" value="">');
+
+                                    
+                   }
+
+              });   
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerPlagas"
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/plaga_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   
+                   
+                   for(var i = 0; i < obj.length; i++){
+                     
+                     var id_plaga = obj[i]['id_plaga'];
+                     var nombre = obj[i]['nombre'];
+                     var descripcion = obj[i]['descripcion'];
+                      $('#plagas').append($('<option>',
+                      {
+                        value: id_plaga,
+                        text : nombre 
+                      }));              
+                   }
+                      $('select').material_select();
+              });  
+
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerPlagasDeProductos",
+                    "idProducto": $.get('id_producto')
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/plaga_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   
+                   
+                   for(var i = 0; i < obj.length; i++){
+                     
+                     var id_plaga = obj[i]['id_plaga'];
+                     var nombre = obj[i]['nombre'];
+
+                     $(".plagasAsignadas").append(
+                      '<div class="card">'+
+                        '<input type="hidden" id="idPaso" value="">'+
+                        '<div class="card-content">'+
+                          '<div class="row">'+
+                            '<div class="col s12">'+
+                              '<input type="hidden" id="plaga'+id_plaga+'" value="'+id_plaga+'">'+
+                              '<p><b>'+(i+1)+'</b>. '+nombre+'<a class="eliminarPlaga right"><i class="material-icons" id="'+id_plaga+'">delete</i></a></p>'+
+                              '<br>'+
+                              '<hr>'+ 
+                            '</div>'+
+                          '</div>'+
+                        '</div>'+  
+                      '</div>'
+                      );
+               
+                   }
+                      
+              });                
+
+
+
+      $("#asignar").click(function(){  
+
+            var datos=[];
+              datos.push({
+                "operacion": "asignarPlaga",
+                "id_plaga": $("#plagas").val(), 
+                "id_producto": $.get('id_producto')
+              }); 
+            var ha = {"datos": datos};    
+            var json = JSON.stringify(ha);
+            console.log(json);
+            ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/plaga_gestion.php", {"json": json}).done(function(info) {
+                       
+              if (info) {
+                console.log(info);
+                Materialize.toast('Error al Registrar', 500,'',function(){
+                  location.reload(true);              
+                });
+              }else{
+                Materialize.toast('Agregado Correctamente', 500,'',function(){
+                  location.reload(true);              
+                });
+              }
+            });
+
+            return false;           
+
+ 
+      });
+
+        $(document).on('click','.eliminarPlaga',function(e){   
+          var r = confirm("Confirmar la Eliminacion del Paso");
+            if (r == true) {
+              var id = e.target.id;
+              
+                    var datos=[];
+                      datos.push({
+                        "operacion": "eliminarPlagaAsignada", 
+                        "id_plaga": id,
+                        "id_producto": $.get('id_producto')
+                      }); 
+
+                      
+                    var text = {"datos": datos};   
+                    var json = JSON.stringify(text);
+
+                    ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/plaga_gestion.php", {"json": json}).done(function(info) {
+                      if (info) { 
+                        Materialize.toast('Error al Eliminar', 500,'',function(){
+                        location.reload(true);
+                        });
+                      }else{
+                        Materialize.toast('Eliminado Correctamente', 500,'',function(){
+                          location.reload(true);              
+                        });
+                      }
+                    });
+
+                  return false;   
+            }
+       
+
+        });  
+
+
+
+            
+
+  });
+
+       function ajax(url, data){
+
+            var ajax = $.ajax({
+                "url": url,
+                "data": data,
+                "type": "POST",
+
+              
+              });
+               return ajax;
+
+          }
+
+  </script> 
+</body>
+</html> 

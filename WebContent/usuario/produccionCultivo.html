@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <title>
+     SOCEA - administrador
+    </title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" rel="stylesheet" href="http://192.168.1.14:8080/Actualizacion/css/estilo.css">  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+        
+        
+</head>  
+     
+<body class="font-cover" id="main" style="">
+ 
+ <!-- MENU DE NAVEGACION--> 
+<nav class="teal">
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s12">
+            <a href="../index.html" class="brand-logo"><h1>tuAGRO</h1></a> 
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>     
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="inicio.html">Inicio</a></li>
+               <li  class="active"><a href="cultivo.html">Mis Cultivos</a></li>
+                <li>
+                 <a class="dropdown-button usuario" href="#!" data-activates="dropdown2"></a>
+                </li>
+                <i class="material-icons left">account_circle</i>
+            </ul>  
+            <!--menu desplegable-->
+              <ul class="dropdown-content" id="dropdown2">
+                <li><a href="../servidor/logout.php">Cerrar Sesion</a></li>
+              </ul> 
+        <!--Menu movile-->      
+                <ul class="side-nav" id="mobile-demo">
+                  <li>
+                    <div class="user-view">
+                      <div class="background">
+                        <img src="../../imagenes/banner1.jpg">
+                      </div>
+                      <a href="#"><img class="circle" src="../../imagenes/banner1.jpg"></a>
+                      <a href="#"><span class="usuario" style="font-size: 20px;"></span></a>
+                      <a href="#"><span class="email"></span></a>
+                    </div>
+                  </li>
+                  <li><a href="inicio.html">Inicio</a></li>
+                  <li><div class="divider"></div></li>
+                  <li class="no-padding">
+                  <li><a href="cultivo.html">Mis Cultivos</a></li>
+                  <li><div class="divider"></div></li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li class="active">
+                        <a href="#" class="collapsible-header"><i class="material-icons 
+      right">arrow_drop_down</i>Calcular Estimado</a>
+                          <div class="collapsible-body">
+                            <ul class="collection2">
+ 
+                            </ul>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>                  
+                  <li><a href="../servidor/logout.php">Cerrar Sesion</a></li>
+                </ul>                      
+        </div>
+      </div>
+    </div>    
+  </div>  
+</nav>
+    
+  <!--</div>-->
+
+<div id="contenedor-principal" class="">
+      <div class="banner" style="visibility: visible; width: 100%; height: 200px; position: relative; overflow: hidden;">
+
+          <img class="z-depth-3 responsive-img img-banner" src="../../imagenes/banner1.jpg">
+          <div class="box">
+              <h1><b>Cultivo</b></h1>
+          </div><!-- /.box -->
+    </div>   
+  <div class="row">
+    <!-- Categorias -->
+    <div class="col s4  hide-on-small-only">
+      <div class="card">
+        <div class="card-content center">
+          <h2>Calcular Estimado</h2>
+        </div>
+        <div class="collection">
+
+        </div>
+      </div>
+    </div>                 
+    <div class="col s12 m8"> 
+      <div class="row">
+        <div class="descripcion">
+           <div class="nombre_cultivo">
+             
+           </div>       
+          <br>
+          <p class="center">Realice un estimado de su produccion con datos de la materia prima y terrono a utilzar</p>                
+        </div>    
+      </div>
+      <div class="row">
+        <div class="col s12 l12 m12 recursos">
+ 
+        </div>
+      </div>                          
+    </div>      
+  </div>
+
+
+
+              
+          
+            
+        <footer class="page-footer teal">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">tuAGRO</h5>
+                <p class="grey-text text-lighten-4">Proyecto de Actualizacion tecnologica 10mo Semestre, Ingenieria de Sistemas, Corporacion Universitaria de Caribe CECAR</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Desarrolladores</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jose Alberto Martinez Villegas</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Luis Fernando Navaz Sierra</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jahir Jose Estrada</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+
+
+
+  <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script type="text/javascript" src="http://192.168.1.14:8080/Actualizacion/javaScript/datosUrl.js"></script>   
+  <script type="text/javascript">
+       $(document).ready(function() {
+      $('select').material_select();
+  $(document).ready(function(){
+    $('.modal').modal();
+  });      
+      $('.dropdown-button').dropdown({
+        contrainWidth: true,
+        gutter: 20,
+        belowOrigin: true,
+        alignment: 'left',
+        stopPropagation: false
+      }); 
+      $('.button-collapse').sideNav();
+    });
+  </script>
+
+<script type="text/javascript">  
+  
+  $(document).ready(function(){
+    $('.tooltipped').tooltip({delay:10});
+
+        $(".collection").append(
+          '<a href="verCultivo.html?id_cultivo='+$.get('id_cultivo')+'" class="collection-item "><i class="material-icons left">assignment</i>Estimado Inicial</a>'+ 
+          '<a href="produccionCultivo.html?id_cultivo='+$.get('id_cultivo')+'" class="collection-item active"><i class="material-icons left">assignment</i>Datos finales</a>'
+        );
+
+        $(".collection2").append(
+          '<li class="active"><a href="verCultivo.html?id_cultivo='+$.get('id_cultivo')+'" class="collection-item"><i class="material-icons left">assignment</i>Estimado Inicial</a></li>'+ 
+          '<li><a href="produccionCultivo.html?id_cultivo='+$.get('id_cultivo')+'" class="collection-item"><i class="material-icons left">assignment</i>Datos Finales</a></li>'
+        );       
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerSesion"
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/usuario.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   var id = obj.id_usuario;
+                   var usuario = obj.usuario;
+                   var nombre = obj.nombre;
+                   var apellido = obj.apellido;
+                   var email = obj.email;
+                   $(".usuario").append(nombre+" "+apellido);
+                   $(".email").append(email);
+              }); 
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerCultivoSeleccionado",
+                    "id": $.get('id_cultivo')
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+           
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/cultivo_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   
+                   for(var i = 0; i < obj.length; i++){
+                     var nombre = obj[i]['nombre'];
+
+                     $(".nombre_cultivo").append(
+                      '<h2><p>'+nombre+'</p></h2>'
+                      );
+                   } 
+
+              });  
+
+//###################################################
+
+               var datos=[];
+                  datos.push({
+                    "operacion": "obtenerRecursos",
+                    "id": $.get('id_cultivo')
+                  }); 
+              var usuario = {"datos": datos};   
+              var json = JSON.stringify(usuario);
+           
+
+              ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/cultivo_gestion.php", {"json": json}).done(function(info) {
+                   var obj = jQuery.parseJSON(info);
+                   console.log(obj.length);
+                   if(obj.length == 0){
+
+                    $(".recursos").append(
+                      '<div class="login center-align">'+      
+                        '<div class="row">'+
+                          '<p class="left-align">Estimado Inicial</p>'+
+                          '<hr>'+
+                          '<br>'+
+                          '<div class="container">'+
+                            '<div class="input-field col s12 l6 m12  offset-s1">'+
+                              '<input id="estimado_semillas" name="estimado_semillas"  type="text" class="validate" value="">'+
+                              '<label for="estimado_semillas">Semillas Necesarias</label>'+
+                            '</div>'+ 
+                            '<div class="input-field col s12 l6 m12  offset-s1">'+
+                              '<input id="estimado_germinar" name="estimado_germinar"  type="text" class="validate"  value="">'+
+                              '<label for="estimado_germinar">Plantas a Germinar</label>'+
+                            '</div>'+                      
+                          '</div>'+                
+                        '</div>'+                                       
+                      '</div>'
+                    );
+
+                   }else{
+                     for(var i = 0; i < obj.length; i++){
+                       var id_recurso = obj[i]['id_recurso'];
+                       var porcentaje_germinacion = obj[i]['porcentaje_germinacion']; 
+                       var terreno_hectareas = obj[i]['terreno_hectareas']; 
+                       var distancia_lineas = obj[i]['distancia_lineas'];
+                       var distancia_semillas = obj[i]['distancia_semillas'];
+                       var semillas_requeridas = obj[i]['semillas_requeridas'];
+                       var plantas_esperadas = obj[i]['plantas_esperadas'];
+                       var id_cultivo = obj[i]['id_cultivo'];
+
+                       $(".recursos").append(
+                        '<div class="login center-align">'+      
+                          '<div class="row">'+
+                            '<p class="left-align">Estimado Inicial</p>'+
+                            '<hr>'+
+                            '<br>'+ 
+                            '<div class="container">'+
+                              '<div class="input-field col s12 l6 m12  offset-s1">'+
+                                '<input id="estimado_semillas" name="estimado_semillas"  type="text" class="validate" value="'+semillas_requeridas+'">'+
+                                '<label for="estimado_semillas">Semillas Necesarias</label>'+
+                              '</div>'+ 
+                              '<div class="input-field col s12 l6 m12  offset-s1">'+
+                                '<input id="estimado_germinar" name="estimado_germinar"  type="text" class="validate"  value="'+plantas_esperadas+'">'+
+                                '<label for="estimado_germinar">Plantas a Germinar</label>'+
+                              '</div>'+                      
+                            '</div>'+                
+                          '</div>'
+                        );
+
+                           var datos=[];
+                              datos.push({
+                                "operacion": "obtenerProduccion",
+                                "id": $.get('id_cultivo')
+                              }); 
+                          var usuario = {"datos": datos};   
+                          var json = JSON.stringify(usuario);
+                       
+
+                          ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/cultivo_gestion.php", {"json": json}).done(function(info) {
+                               var obj = jQuery.parseJSON(info);
+                               console.log(obj.length);
+                               if(obj.length == 0){
+
+                                $(".recursos").append(
+                                  '<div class="row login">'+
+                                    '<p class="left-align">Produccion Obtenida</p>'+
+                                    '<hr>'+
+                                    '<br>'+ 
+                                    '<div class="container">'+
+                                      '<div class="input-field col s12 l6 m12  offset-s1">'+
+                                        '<input id="semillas_germinadas" name="semillas_germinadas"  type="text" class="validate" value="">'+
+                                        '<label for="semillas_germinadas">Semillas Germinadas</label>'+
+                                      '</div>'+                     
+                                    '</div>'+               
+                                  '</div>'+     
+                                  '<div class="row guardar">'+
+                                    '<div class="col s12 m12 l12">'+
+                                      '<input type="button" id="crearResultado" value="Guardar" class="btn">'+     
+                                    '</div>'+
+                                  '</div>'
+                                );
+
+                               }else{
+                                 for(var i = 0; i < obj.length; i++){
+                                   var id_produccion = obj[i]['id_produccion'];
+                                   var semillas_germinadas = obj[i]['semillas_germinadas'];
+                                   var id_cultivo = obj[i]['id_cultivo'];
+
+                                   $(".recursos").append(
+                                    '<div class="row login">'+
+                                      '<p class="left-align">Produccion Obtenida</p>'+
+                                      '<hr>'+
+                                      '<br>'+ 
+                                      '<div class="container">'+
+                                        '<div class="input-field col s12 l6 m12  offset-s1">'+
+                                          '<input type="hidden" id="id_produccion" value="'+id_produccion+'">'+
+                                          '<input id="semillas_germinadas" name="semillas_germinadas"  type="text" class="validate" value="'+semillas_germinadas+'">'+
+                                          '<label for="semillas_germinadas">Semillas Germinadas</label>'+
+                                        '</div>'+                     
+                                      '</div>'+                
+                                    '</div>'+     
+                                    '<div class="row guardar">'+
+                                      '<div class="col s12 m12 l12">'+
+                                        '<input type="button" id="crearResultado" value="Modificar" class="btn">'+     
+                                      '</div>'+
+                                    '</div>'
+                                  );
+
+                                   
+                                 } 
+                               }
+                               
+
+                          }); 
+
+
+                     } 
+                   }
+                   
+
+              }); 
+
+//##############################################
+
+
+
+
+            $(document).on('click','#crearResultado',function(){   
+               if ($("#crearResultado").val() == "Guardar"){
+                var semillas_germinadas = $("#semillas_germinadas").val();
+  
+                if (semillas_germinadas == ""){
+                  Materialize.toast('Complete los Campos', 3000,'',function(){          
+                  });
+                }else{
+                  var datos=[];
+                    datos.push({
+                      "operacion": "crearResultado",
+                      "semillas_germinadas": semillas_germinadas,
+                      "id_cultivo": $.get('id_cultivo')
+                    }); 
+
+
+                    
+                  var text = {"datos": datos};   
+                  var json = JSON.stringify(text);
+
+                  ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/cultivo_gestion.php", {"json": json}).done(function(info) {
+                    if (info) { 
+                      Materialize.toast('Error al Guardar', 300,'',function(){
+                      location.reload(true);
+                      });
+                    }else{
+                      Materialize.toast('Guardado Corectamente', 300,'',function(){
+                        location.reload(true);              
+                      });
+                    }
+                  });
+
+                return false;
+                } 
+               }else{
+                var semillas_germinadas = $("#semillas_germinadas").val();
+  
+                if (semillas_germinadas == ""){
+                  Materialize.toast('Complete los Campos', 3000,'',function(){          
+                  });
+                }else{
+                  var datos=[];
+                    datos.push({
+                      "operacion": "modificarResultado",
+                      "semillas_germinadas": semillas_germinadas,
+                      "id_produccion": $("#id_produccion").val()
+                    }); 
+
+
+                    
+                  var text = {"datos": datos};   
+                  var json = JSON.stringify(text);
+
+                  ajax("http://192.168.1.14:8080/Actualizacion/WebContent/servidor/cultivo_gestion.php", {"json": json}).done(function(info) {
+
+                      if (info) {
+          
+                        Materialize.toast('Error al Actualizar', 300,'',function(){
+                          location.reload(true);              
+                        });
+                      }else{
+                        Materialize.toast('Actualizada Correctamente', 300,'',function(){
+                          location.reload(true);              
+                        });
+                      }
+                    });
+
+                    return false;           
+                  }  
+               }
+             
+            });  
+
+
+
+
+        
+  });
+
+       function ajax(url, data){
+
+            var ajax = $.ajax({
+                "url": url,
+                "data": data,
+                "type": "POST",
+
+              
+              });
+               return ajax;
+
+          }
+
+  </script> 
+</body>
+</html> 

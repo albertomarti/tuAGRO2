@@ -1,0 +1,131 @@
+
+
+/* ==========================================================================
+   Autor: Jose Alberto Martinez Villegas 
+   ========================================================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*///////////////////////// Estilos index.html /////////////////////////*/
+#login{
+    /*background-image: url(../recursos/fondo.jpg);
+*/}
+nav{
+   /* position: fixed;*/
+    top: 0;
+}
+.colum_izquierda{
+    position: fixed;
+    top: 0;   
+    
+}
+body{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+td{
+  margin-top: 4.1em;  
+}
+.font-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #F5F5F5;
+}
+
+.banner .img-banner{
+     width:100%; 
+      padding: 0;
+  margin: 0;
+
+}
+a span{
+    font-family: 'apex_newbook';
+    color: #472C85;
+    font-size: 20px;   
+}
+
+
+h1{
+    font-family: 'apex_newmedium';
+    font-size: 40px;
+    margin-top: 0.25em;
+    text-align: center;
+}
+h2{
+    font-family: 'apex_newbook';
+    color: #472C85;
+    font-size: 30px;text-align: center;
+}
+h3{
+    font-family: 'apex_newbook';
+    color: #888888;
+    font-size: 24px;
+}
+
+h4{
+    font-family: 'apex_newlight';
+    color: #888888;
+    font-size: 14px;
+
+}
+
+.bienvenida{
+    text-align: center;
+}
+
+.descripcion{
+    padding: 0;
+    top: 0;
+    color: #888888;
+    font-size: 20px;
+    font-family: 'apex_newmedium';
+
+
+}
+
+ .login{
+        font-family: 'apex_newbook';
+    color: #472C85;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+/*#####################################################################3*/
+
+.registro{
+        font-family: 'apex_newbook';
+    color: #472C85;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    width: 350px;
+    border-radius: 4px;
+
+
+}
+
+.img-producto{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+
